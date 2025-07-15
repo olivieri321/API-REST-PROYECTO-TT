@@ -1,6 +1,6 @@
 # API-REST-STORE-TT
 
-<h4> Estudiante: Facundo Agustin Olivieri</h4>
+<h4> Desarrollado por: Facundo Agustin Olivieri</h4>
 <h5> Este proyecto es una API-REST hecha con nodejs, permite obtener, crear, borrar y modificar productos de una base de datos de firebase. Ademas, permite el inicio de sesion como administrador para desbloquear la funcionabilidad completa de la api, las operaciones que necesitan autorizacion son las de borrar, modificar y crear</h5>
 <h3> Instrucciones de uso </h3>
 <h5><ul>

@@ -9,21 +9,25 @@
 <h3> Instrucciones de uso </h3>
 <h5><ul>
   <ul>GET: 
+    <br>
     <li>"/api/products" devolvera todos los productos de la base de datos</li>
     <li>"/api/products/search?categories={categorias}" devolvera productos que contengan las categorias dadas</li>
     <li>"/api/products/{id}" devolvera el producto cuya id sea "{id}"</li>
   </ul>
   <br>
   <ul>POST:
+    <br>
     <li>"/auth/login", agregando en el body del request los datos de inicio de sesion, logea al usuario y le devuelve un token</li>
     <li>"/api/products/create" agrega un producto a la base de datos, requiere token valido de autorizacion</li>
   </ul>
   <br>
   <ul>PUT:
+    <br>
     <li>"/api/products/{id}" edita el producto {id}, requiere token valido de autorizacion</li>
   </ul>
   <br>
   <ul>DEL:
+    <br>
     <li>"/api/products/{id}" elimina el producto {id}, requiere token valido de autorizacion</li>
   </ul>
 </ul></h5>

@@ -20,10 +20,10 @@
   </ul>
   <br>
   <ul>PUT:
-    <li>"/api/products/{id}" edita el producto {id}, requiere token valido de autorizacion</li>
+    <li>"/api/products/{id}" edita el producto "{id}", requiere token valido de autorizacion</li>
   </ul>
   <br>
   <ul>DEL:
-    <li>"/api/products/{id}" elimina el producto {id}, requiere token valido de autorizacion</li>
+    <li>"/api/products/{id}" elimina el producto "{id}", requiere token valido de autorizacion</li>
   </ul>
 </ul></h5>

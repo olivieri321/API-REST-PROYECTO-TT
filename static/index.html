@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Inicio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="main-box">
+    <div class="Tittle">
+        <h1>API REST STORE TT</h1>
+    </div>
+    <div class="intro">
+        <p>
+           Esta es la pagina introductoria de mi API-REST hecha con nodejs, permite obtener, crear, borrar y modificar productos de una base de datos de firebase. Ademas, permite el inicio de sesion como administrador para desbloquear la funcionabilidad completa de la api, las operaciones que necesitan autorizacion son las de borrar, modificar y crear 
+        </p>
+    </div>
+    <div class="instructions">
+        <ul>GET:
+            <li>"/api/products" devolvera todos los productos de la base de datos</li>
+            <li>"/api/products/search?categories={categorias}" devolvera productos que contengan las categorias dadas</li>
+            <li>"/api/products/{id}" devolvera el producto cuya id sea "{id}"</li>
+        </ul>
+        <br>
+        <ul>POST:
+            <li>"/auth/login", agregando en el body del request los datos de inicio de sesion, logea al usuario y le devuelve un token</li>
+            <li>"/api/products/create" agrega un producto a la base de datos, requiere token valido de autorizacion</li>
+        </ul>
+        <br>
+        <ul>PUT:
+            <li>"/api/products/{id}" edita el producto "{id}", requiere token valido de autorizacion</li>
+        </ul>
+        <br>
+        <ul>DEL:
+            <li>"/api/products/{id}" elimina el producto "{id}", requiere token valido de autorizacion</li>
+        </ul>
+    
+    </div>
+    <footer>
+        <ul>
+            <li>autor: Facundo Agustin Olivieri</li>
+            <li>email: facundoolivieri2142@gmail.com</li>
+            <li>telefono: +54 0230 4308607</li>
+        </ul>
+    </footer>
+    
+  </div>
+</body>
+</html>

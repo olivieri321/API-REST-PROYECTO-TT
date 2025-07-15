@@ -5,8 +5,8 @@ const secret_key = process.env.JWT_SECRET_KEY;
 
 const default_user = {
     id: '12345',
-    email: 'admin@test.com',
-    password: 'admin123',
+    email: process.env.ADMIN_EMAIL,
+    password: process.env.ADMIN_PASSWORD,
     rol: 'admin' 
 };
 

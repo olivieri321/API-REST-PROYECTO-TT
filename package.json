@@ -9,7 +9,7 @@
   },
   "name": "api-rest-store",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sistema de gestion de Productos con Expres y Firebase",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

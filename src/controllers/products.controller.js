@@ -1,6 +1,3 @@
-// el conntrolador contiene funciones para responder a una ruta particular
-
-
 import * as auth from "../services/auth.service.js"
 import * as model from "../model/products.model.js"
 

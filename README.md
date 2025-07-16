@@ -28,5 +28,6 @@
 <ol>
   <li>Clonar el repositorio</li>
   <li>Instalar con "npm install"</li>
+  <li>Completar el archivo .env</li>
   <li>Ejecutar con "npm start"</li>
 </ol>

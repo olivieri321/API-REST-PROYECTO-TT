@@ -1,7 +1,4 @@
-
-
-
-// modulo de rutas de gestion de productos
+// modulo de rutas de login
 
 import { Router } from "express"; 
 

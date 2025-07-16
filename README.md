@@ -7,7 +7,7 @@
 <h5><ul>
   <ul>GET:
     <li>"/api/products" devolvera todos los productos de la base de datos</li>
-    <li>"/api/products/search?categories={categorias}" devolvera productos que contengan las categorias dadas</li>
+    <li>"/api/products/search?categories={categorias}" devolvera productos que contengan las categorias dadas. </li>
     <li>"/api/products/{id}" devolvera el producto cuya id sea "{id}"</li>
   </ul>
   <br>

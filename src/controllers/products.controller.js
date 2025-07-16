@@ -118,12 +118,15 @@ export const deleteProduct = async (req, res) => {
     }
 };
 // login de usuario
-export const login = async (req, res)=>{
+export const userLogin = async (req, res)=>{
     try{
         const { email, password } = req.body;
+        if(!email || !password){
+            return res.status(400).json({message: "Credenciales incompletas"})
+        }
         const token = await auth.login(email, password);
         if(token){
-            res.status(200).json(token)
+            res.status(200).header("Authorization", "Bearer "+token).json({token})
         }else{
             res.status(401).json({message: "Credenciales invalidas"})
         }

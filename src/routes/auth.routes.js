@@ -5,10 +5,10 @@
 
 import { Router } from "express"; 
 
-import {login} from "../controllers/products.controller.js";
+import {userLogin} from "../controllers/products.controller.js";
 
 const router = Router();
 
-router.post("/login", login);
+router.post("/login", userLogin);
 
 export default router;

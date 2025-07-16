@@ -24,3 +24,9 @@
     <li>"/api/products/{id}" elimina el producto "{id}", requiere token valido de autorizacion</li>
   </ul>
 </ul></h5>
+<h3> Instalacion:</h3>
+<ol>
+  <li>Clonar el repositorio</li>
+  <li>Instalar con "npm install"</li>
+  <li>Ejecutar con "npm start"</li>
+</ol>

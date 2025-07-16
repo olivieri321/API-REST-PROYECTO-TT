@@ -16,7 +16,7 @@
     "start": "node --watch index.js"
   },
   "keywords": [],
-  "author": "FACUNDO AGUSTIN OLIVIERI",
+  "author": "Facundo Agustin Olivieri",
   "license": "MIT",
   "type": "module"
 }

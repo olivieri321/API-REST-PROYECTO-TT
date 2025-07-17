@@ -33,9 +33,9 @@
   <li>Ejecutar con "npm start"</li>
 </ol>
 <h3> Estructura de datos de usuario</h3>
-<h3>
+<h4>
   {
     "email":string
     "password":string
   }
-</h3>
+</h4>

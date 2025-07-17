@@ -13,6 +13,7 @@
   <br>
   <ul>POST:
     <li>"/auth/login", agregando en el body del request los datos de inicio de sesion validos, le devuelve un token de autorizacion</li>
+    <li>"/auth/register", agregando en el body del request los datos del usuario, crea una cuenta para poder iniciar sesion</li>
     <li>"/api/products/create" agrega un producto a la base de datos, requiere token valido de autorizacion</li>
   </ul>
   <br>
@@ -31,3 +32,10 @@
   <li>Completar el archivo .env</li>
   <li>Ejecutar con "npm start"</li>
 </ol>
+<h3> Estructura de datos de usuario</h3>
+<h3>
+  {
+    "email":string
+    "password":string
+  }
+</h3>

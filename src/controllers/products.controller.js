@@ -1,10 +1,11 @@
-import * as auth from "../services/auth.service.js"
-import * as model from "../model/products.model.js"
+
+import * as model from "../models/products.model.js"
+import * as service from "../services/products.service.js"
 
 // devolver todos los productos
-export const getAllProdtucts = async (req, res) => {
+export const getAllProducts = async (req, res) => {
   try {
-    const products = await model.getAllProducts();
+    const products = await service.getAllProducts();
     res.status(200).json(products);
   } catch (error) {
     console.error("Error:", error);
@@ -44,7 +45,7 @@ export const searchProductByID = async (req, res) => {
         if(!productId){
             return res.status(400).json({message: "ID de producto no valido"})
         }
-        const search = await model.searchProductById(req.params.id);
+        const search = await service.getProductById(req.params.id);
         if(search){
             res.status(200).json(search);
         }else{
@@ -115,20 +116,3 @@ export const deleteProduct = async (req, res) => {
     }
 };
 // login de usuario
-export const userLogin = async (req, res)=>{
-    try{
-        const { email, password } = req.body;
-        if(!email || !password){
-            return res.status(400).json({message: "Credenciales incompletas"})
-        }
-        const token = await auth.login(email, password);
-        if(token){
-            res.status(200).header("Authorization", "Bearer "+token).json({token})
-        }else{
-            res.status(401).json({message: "Credenciales invalidas"})
-        }
-    }catch(error){
-        console.error("Error al iniciar sesion", error);
-        res.status(500).json({message: "Error interno del servidor"})
-    }
-}

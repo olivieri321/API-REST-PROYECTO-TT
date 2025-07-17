@@ -1,5 +1,6 @@
 import jwt from 'jsonwebtoken';
 import 'dotenv/config';
+import * as authorization from "../models/auth.model.js"
 
 const secret_key = process.env.JWT_SECRET_KEY;
 
@@ -18,8 +19,7 @@ export const generateToken = (userData) => {
 
 export async function login(email, password) {
   try{
-    if (email === default_user.email
-      && password === default_user.password) {
+    if (authorization.validateUser(email,password)) {
       const token = generateToken(default_user);
       return token;
     } else {
@@ -31,3 +31,14 @@ export async function login(email, password) {
   }
   
 }
+
+export async function register(email, password) {
+  try{
+   return authorization.createUser(email,password);
+  }catch(error){
+    console.log("Error en el login del usuario " + error )
+    throw error;
+  }
+  
+}
+

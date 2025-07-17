@@ -1,8 +1,8 @@
 import "dotenv/config"
 import express from "express"
 import cors from "cors"
-import productsrouter from "./src/routes/products.routes.js"
-import authrouter from "./src/routes/auth.routes.js"
+import productsrouter from "./src/routes/products.router.js"
+import authrouter from "./src/routes/auth.router.js"
 import path from "path";
 import { fileURLToPath } from "url";
 

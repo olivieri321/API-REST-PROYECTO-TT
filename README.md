@@ -47,5 +47,5 @@ La API REST está desplegada en **[https://api-rest-store-phi.vercel.app/](https
   "password": string
 }
 ```
-
+-----
 Desarrollado por Facundo Agustin Olivieri, DNI: 44934218

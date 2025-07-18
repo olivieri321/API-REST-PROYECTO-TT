@@ -1,9 +1,7 @@
 # API-REST-STORE
-
-Desarrollado por Facundo Agustin Olivieri, DNI: 44934218
 -----
 
-Una API REST hecha con Node.js que permite obtener, crear, borrar y modificar productos de una base de datos de Firebase usando Firestore. Además, permite el inicio de sesión como administrador para desbloquear la funcionalidad completa de la API. Las operaciones que necesitan autorización son las de borrar, modificar y crear.
+API REST hecha con Node.js que permite obtener, crear, borrar y modificar productos de una base de datos de Firebase usando Firestore. Además, permite el inicio de sesión como administrador para desbloquear la funcionalidad completa de la API. Las operaciones que necesitan autorización son las de borrar, modificar y crear.
 La API REST está desplegada en **[https://api-rest-store-phi.vercel.app/](https://api-rest-store-phi.vercel.app/)**
 
 -----
@@ -49,3 +47,5 @@ La API REST está desplegada en **[https://api-rest-store-phi.vercel.app/](https
   "password": string
 }
 ```
+
+Desarrollado por Facundo Agustin Olivieri, DNI: 44934218
